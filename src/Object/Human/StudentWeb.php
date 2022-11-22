@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App;
+
 class StudentWeb
 {
     public int $age;
@@ -40,16 +42,6 @@ class StudentWeb
     }
 }
 
-$student = new StudentWeb(15, 'Валерий', 'Соколов');
-$student->setAge(35);
-StudentWeb::setCourse('Продвинутый PHP');
-
-echo "--Информация о студенте-- \n";
-echo "Имя: $student->name \n";
-echo "Фамилия: $student->surname \n";
-echo "Возраст: $student->age \n";
-echo 'Курс: ' . $student->getCourse() . "\n";
-echo 'Профессия: ' . StudentWeb::PROFESSION;
 
 
 
