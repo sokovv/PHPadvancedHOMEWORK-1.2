@@ -1,0 +1,18 @@
+{
+    "name": "valera/ph-padvanced-homework-1.2",
+    "require": {
+        "psr/log": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Valera\\PhPadvancedHomework12\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valera Sokolov",
+            "email": "komproekt42@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
