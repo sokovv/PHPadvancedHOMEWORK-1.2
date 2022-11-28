@@ -2,14 +2,11 @@
 
 declare(strict_types=1);
 
-include_once 'Object/Human/StudentWeb.php';
-include_once 'Object/Technics/Transport/AutoToyota.php';
-include_once 'Object/Technics/Appliances/TvHome.php';
+require_once('autoload.php');
 
-use App\AutoToyota;
-use App\StudentWeb;
-use App\TvHome;
-
+use Object\Technics\Transport\AutoToyota;
+use Object\Human\StudentWeb;
+use Object\Technics\Appliances\TvHome;
 
 echo "Домашняя работа по теме 'Понятие класса и объекта'(Второе и третье задание в одном проекте) \n" . "\n";
 //Студент
@@ -56,3 +53,9 @@ foreach ($arrTv as $elem) {
     echo "Цена: $elem->rate руб. \n";
     echo "\n";
 }
+
+
+// Подклоючение без автозагрузчика
+//include_once 'Object/Human/StudentWeb.php';
+//include_once 'Object/Technics/Transport/AutoToyota.php';
+//include_once 'Object/Technics/Appliances/TvHome.php';

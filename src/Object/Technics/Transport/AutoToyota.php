@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace Object\Technics\Transport;
 
 class AutoToyota
 {
